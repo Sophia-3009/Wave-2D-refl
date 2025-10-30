@@ -1,0 +1,5 @@
+64.98 64.6 55.0	rho_start(cm) - starting position
++0.01	rho_step(cm)
+0.0	tet(deg)
+0.0	mp
+-1.0	nphi

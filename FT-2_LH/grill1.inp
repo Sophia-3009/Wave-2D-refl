@@ -1,0 +1,10 @@
+90.0	angle alfg (deg) between WG broad side and antitoroidal direction tau (alfg=90.0 for a convent. grill)
+-20.0	angle alfm (deg) between plasma magnetic field and antitoroidal direction tau (tau = -phi)
+1	Number of rows of output waveguides
+1	Maximum evanescent mode number M
+4	Maximum evanescent mode number N
+0.001	vacuum gap grill-plasma (cm)
+2.45	generator frequency (GHz)
+1.0	dielectric constant of the waveguides media
+.T.	logical - passive waveguides?
+.T.	logical - multijunction grill?

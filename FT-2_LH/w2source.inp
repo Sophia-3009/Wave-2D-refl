@@ -1,0 +1,2 @@
+1	integer AntType (0-Sngl.Mode, 1-Grill, 2-Strap, 3-Spher.Front, 4-Gaus.Beam, 5-File, 6-BasicSet, 7-Imped)
+200.0	Pinp(kW)

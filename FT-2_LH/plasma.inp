@@ -1,0 +1,9 @@
+55.0	R0(cm) - major radius (R0=0 for cylinder geometry)
+8.0	a0(cm) - minor radius
+0.0	SOL(cm) - SOL width; a0-sol = al
+0.5	Delx(cm) - Shafranov shift at the axis
+1.0	lamw - ellipt-ty of the last flux surface (lamw>=1)
+0.0	gamw - triang-ty of the last flux surface (0<=gamw<=1)
+0.92	frequency (GHz)
+1	integer number of ion species
+1 1	integer ion mass, ion charge

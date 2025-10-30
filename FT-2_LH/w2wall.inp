@@ -1,0 +1,11 @@
+1	integer GrillType (1 - E-grill; 2 - H-grill)
+1	integer number of waveguides in poloidal direction
+0.0	waveguide center poloidal positions (theta, degrees)
+120.0	waveguide openings poloidal heights (theta, degrees)
+1.0	amplitudes of waves in waveguides
+0.0	phases of waves in waveguides (degrees)
+1	integer number of waveguides in toroidal direction
+0.0	waveguide center toroidal positions (phi, degrees)
+20.0	waveguide openings toroidal widths  (phi, degrees)
+1.0	amplitudes of waves in waveguides
+0.0	phases of waves in waveguides (degrees)

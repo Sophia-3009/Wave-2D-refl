@@ -1,0 +1,10 @@
+4.0		Ro(cm) - R-coordinate of the beam ref. system origin
+0.0		Yo(cm) - Y-coordinate of the beam ref. system origin
+0.0		phigbo(deg) - phi coordinate of the beam ref. system origin
+0.0		kap(deg) - beam elevation angle
+0.0		chi(deg) - rotation angle in the horizontal plane
+1.5		Wgby(cm) - beam vertical radius by the e-fold level
+1.5		Wgbz(cm) - beam horizontal radius by the e-fold level
+1		INTEGER polarization type (from file - 0, WKB solution - 1 or 2)
+(1.0, 0.0)	Cgby(a.u.) - COMPLEX "vertical" field component of the beam (+ counter tet)
+(0.0, 0.0)	Cgbz(a.u.) - COMPLEX "horizontal" field component of the beam (+ along phi)

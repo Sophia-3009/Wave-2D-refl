@@ -1,0 +1,4 @@
+0	zone division algorithm (0 - Nzone=1, 1 - manual, 2 - automatic near xuhr)
+2	Nzone - number of zones
+ 1.0	Xlay(2:Nzone) (cm) -  x-coordinates of boundaries between zones
+1   2	pdlay(1:Nzone) - relative x-mesh densities in each zone

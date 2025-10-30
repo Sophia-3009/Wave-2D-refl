@@ -1,0 +1,16 @@
+635.0	R0(cm) - major radius
+185.0	a0(cm) - minor radius (by limiter/separatrix)
+0.0	SOL(cm) - distance between limiter/separatrix and plasma edge
+0.2	density decay length (cm) at 0 < x < SOL (irrelevant if SOL=0)
+100.0	ne0(10^12 cm^-3) - density at the axis
+1.0	neb(10^12 cm^-3) - density at x = SOL
+2.0	pd1 | powers determining density profile:
+1.0	pd2 | ne=(ne0-neb)*(1-(rho/a0)^pd1)^pd2+neb
+51.8	Btor0(kGs) - vacuum toroidal magnetic field at the axis
+5.0	frequency (GHz)
+1	integer number of ion species
+1 1	integer ion mass, ion charge
+
+!!! This input file format is obsolete !!!
+!!! It is kept only for compatibility  !!!
+!!! with old packages (see Input.f90)  !!!

@@ -1,0 +1,7 @@
+.F.     logical - if Faraday screen is present
+2.      strap distance from the wall (cm)
+3.      screen distance from the wall (cm)
+0.      strap inclination angle to the poloidal direction (degrees)
+0.      strap center poloidal position (theta, degrees)
+60.     strap poloidal height (theta, degrees)
+1.      strap current

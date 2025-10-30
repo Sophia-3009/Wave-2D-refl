@@ -1,0 +1,10 @@
+22.0	Bvac0(kGs) - vacuum toroidal magnetic field at R=R0 (+ along phi)
+201	Nipnt - Number of data points with Ipn values to be fitted
+CURR	BpDet - CURR: jp(r)->Bpol(r) or NONE: Bpol=Ip=0
+
+:CURR
+20.0	Ip(kA) - toroidal plasma current (+ along phi)
+0.0	rjl=jpl/jp0 (jpl=jp(al), jp0=jp(0) - limiter and axis current densities)
+2.0	pjp1 | powers determining jp(rho) profile at 0 <= rho <= al:
+1.5	pjp2 | jp=(jp0-jpl)*(1-(rho/al)^pjp1)^pjp2+jpl
+1.0	ljp(cm) - jp(rho) decay length at al < rho <= a0: jp=jpl*exp((al-rho)/ljp)

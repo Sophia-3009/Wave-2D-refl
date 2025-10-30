@@ -1,0 +1,11 @@
+PARAB	density profile type (PARAB or GAUSS or SPLIN)
+20.0	ne0(10^12 cm^-3) - density at the axis    (rho = 0)
+0.765	nel(10^12 cm^-3) - density at the limiter (rho = al = a0-sol)
+2.0	pne1 | powers determining ne(rho) profile at 0 <= rho <= al:
+1.0	pne2 | ne=(ne0-nel)*(1-(rho/al)^pne1)^pne2+nel
+1.0	lne(cm) - ne(rho) decay length at al < rho <= a0: ne=nel*exp((al-rho)/lne)
+0.0	density fluctuations max amplitude (10^12 cm^-3)
+0.0	density fluctuations phase at central position (degree)
+1.0	density fluctuations wave length (cm)
+0.0	density fluctuations central position (cm) (measured from plasma boundary)
+1.0	density fluctuations region width (cm)

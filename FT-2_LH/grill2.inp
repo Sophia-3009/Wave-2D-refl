@@ -1,0 +1,8 @@
+TE	Incident mode type: TE or TM
+1	Incident mode number M
+0	Incident mode number N
+.T.	logical - compute spectrum?
+-10.0	Nymax2D lower boundary
++10.0	Nymax2D upper boundary
+-10.0	Nzmax2D left  boundary
++10.0	Nzmax2D right boundary

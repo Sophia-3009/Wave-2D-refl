@@ -1,0 +1,7 @@
+50.0d0	Nymax
+50.0d0	Nzmax
+1000	kymax
+2000	kzmax
+0.002	accuracy of the solution
+0	Xsave type (save at: 0 - no save, 1 - arbitrary x, 2 - xuhr, <=-1 - x mesh)
+0.0	Xsave position (cm) (required only if Xsave type = 1)

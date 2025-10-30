@@ -1,0 +1,9 @@
+Maxwell	DistribFuncType (character, legal values: Maxwell, Mxw_TST, Mxw_CDi)
+.F.	GDF_DEBUG
+.F.	EDF_DEBUG
+0.65	EDF_psi0
+0.1	EDF_dpsi
+0.1	EDF_gradmin   (0 <= EDF_gradmin <= 1; 0 - horizontal plateau, 1 - Maxwell EDF)
+0.3	EDF_FitMargin (0 <= EDF_FitMargin=dufit/duplat <= 1; 0 - no margins)
+4	EDF_Nmin (umax=Uc/EDF_Nmin)
+8	EDF_Nmax (umin=Uc/EDF_Nmax)

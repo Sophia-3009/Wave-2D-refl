@@ -1,0 +1,17 @@
+.T.	logical - Hot plasma model
+0.5	Te0(keV) - electron temperature at the axis    (rho = 0)
+0.022	Tel(keV) - electron temperature at the limiter (rho = al = a0-sol)
+2.0	pTe1 | powers determining Te profile at 0 <= rho <= al:
+1.0	pTe2 | Te=(Te0-Tel)*(1-(rho/al)^pTe1)^pTe2+Tel
+1.0	lTe (cm) - Te decay length at al < rho <= a0: Te=Tel*exp((al-rho)/lTe)
+0.001	Ti0(keV) - ion temperature at the axis    (rho = 0)
+0.001	Til(keV) - ion temperature at the limiter (rho = al = a0-sol)
+2.0	pTi1 | powers determining Ti profile at 0 <= rho <= al:
+1.0	pTi2 | Ti=(Ti0-Til)*(1-(rho/al)^pTi1)^pTi2+Til
+1.0	lTi (cm) - Ti decay length at al < rho <= a0: Ti=Til*exp((al-rho)/lTi)
+0.001	VRmin - minimum value of kll*vt/o0 = vt/vph||
+.T.	logical - account for Landau damping
+.F.	logical - account for ECR damping
+.F.	logical - account for ICR damping
+.F.	logical - account for Transit Time damping
+.F.	logical - account for Mixed Terms damping
