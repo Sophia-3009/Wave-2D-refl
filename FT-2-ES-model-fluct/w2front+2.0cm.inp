@@ -1,0 +1,6 @@
+16.0	Xf(cm) - distance from the minor axis to the focus
+2.0	Yf(cm) - distance from the equatorial plane to the focus (here Yf=sqrt(8^2-4.6^2)+7)
+0.0	kap0(deg) - beam axis elevation angle (between Pointing vector and e_R ort)
+5.0	dkap(deg) - angular half-width of the beam
+Epol	CHARACTER beam polarization (Epol or Etor)
+converg	CHARACTER beam divergence (converg or diverg)
