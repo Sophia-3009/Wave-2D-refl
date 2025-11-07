@@ -3,10 +3,10 @@ name = 'FT-2-model-fluct' # name of calculation
 description = 'model fluct FT-2 '
 
 [series]
-number = 4
+number = 1
 section = 'w2grid'
 var = 'Nr'
-start = 1501
+start = 401
 step = 50
 
 [params]
@@ -14,7 +14,7 @@ field_solver_ver = 2 # 0 old, 1 MKL+OMP, 2 (MKL+OMP+no_inv_mat)
 
 [w2grid]
 # comments
-Nr = 1601	  # number of radial points
+Nr = 401	  # number of radial points
 nphi1 = 0	  # integer start toroidal wavenumber (Ntor1 = nphi1/R)
 nphi2 = 0	  # integer final toroidal wavenumber (Ntor2 = nphi2/R)
 nphistep = 1      # integer step for toroidal mode number
@@ -37,3 +37,4 @@ gamw = 0.0	# gamw - triang-ty of the last flux surface (0<=gamw<=1)
 freq = 60.0	# frequency (GHz)
 number_of_ion_species = 1	# integer number of ion species
 list_of_ions =[ 1, 1]	    # integer ion mass, ion charge
+
