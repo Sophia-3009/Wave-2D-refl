@@ -1,0 +1,7 @@
+1601	Nr - number of radial points
+0	nphi1 - integer start toroidal wavenumber (Ntor1 = nphi1/R)
+0	nphi2 - integer final toroidal wavenumber (Ntor2 = nphi2/R)
+1	nphistep - integer step for toroidal mode number
+168	Mmax - maximum poloidal mode number
+0	Mspow_excess (non-negative): Msmax = Msmax_min_permissible * 2**Mspow_excess
+2	Pinterv - number of traced time intervals
