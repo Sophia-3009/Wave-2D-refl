@@ -1,31 +1,31 @@
 [work]
 name = 'FT-2_LH_freq' # name of calculation
-description = 'Synth. ES with model fluct., case2, Ba'
+description = 'freq test FT-2 LH Mmax = 64'
 
 [series]
-number = 9
+number = 10
 section = 'plasma'
 var = 'freq'
-start = 59.64
-step = 0.09
+start = 0.90 
+step = 0.01
 
 [params]
 field_solver_ver = 2 # 0 old, 1 MKL+OMP, 2 (MKL+OMP+no_inv_mat)
 
 [w2grid]
 # comments
-Nr = 1601	  # number of radial points
-nphi1 = 0	  # integer start toroidal wavenumber (Ntor1 = nphi1/R)
-nphi2 = 0	  # integer final toroidal wavenumber (Ntor2 = nphi2/R)
+Nr = 101	      # number of radial points
+nphi1 = -122	  # integer start toroidal wavenumber (Ntor1 = nphi1/R)
+nphi2 = -122	  # integer final toroidal wavenumber (Ntor2 = nphi2/R)
 nphistep = 1      # integer step for toroidal mode number
-Mmax = 168     # maximum poloidal mode number
-Mspow_excess = 0  # Mspow_excess (non-negative): Msmax = Msmax_min_permissible * 2**Mspow_excess
-Pinterv = 2  # number of traced time intervals
+Mmax = 64         # maximum poloidal mode number
+Mspow_excess = 1  # Mspow_excess (non-negative): Msmax = Msmax_min_permissible * 2**Mspow_excess
+Pinterv = 0       # number of traced time intervals
 
 [w2source]
 # comments
-AntType = 3    # 0-Sngl.Mode, 1-Grill, 2-Strap, 3-Spher.Front, 4-Gaus.Beam, 5-File, 6-BasicSet, 7-Imped
-Pinp = 1	# Pinp(kW)
+AntType = 1	    # 0-Sngl.Mode, 1-Grill, 2-Strap, 3-Spher.Front, 4-Gaus.Beam, 5-File, 6-BasicSet, 7-Imped
+Pinp = 200.0	# Pinp(kW)
 
 [w2strap]
 faraday_screen  = false  # logical - if Faraday screen is present
@@ -37,13 +37,49 @@ poloidal_height = 60.0   # strap poloidal height (theta, degrees)
 strap_current = 1.0      # strap current
 
 [plasma]
-R0  = 55.0	# R0(cm) - major radius (R0=0 for cylinder geometry)
-a0  = 8.0	# a0(cm) - minor radius
-SOL = 0.0	# SOL(cm) - SOL width; a0-sol = al
-Delx = 0.0	# Delx(cm) - Shafranov shift at the axis
-lamw = 1.0	# lamw - ellipt-ty of the last flux surface (lamw>=1)
-gamw = 0.0	# gamw - triang-ty of the last flux surface (0<=gamw<=1)
-freq = 60.0	# frequency (GHz)
+R0  = 55.0	    # R0(cm) - major radius (R0=0 for cylinder geometry)
+a0  = 8.0	    # a0(cm) - minor radius
+SOL = 0.0	    # SOL(cm) - SOL width; a0-sol = al
+Delx = 0.5	    # Delx(cm) - Shafranov shift at the axis
+lamw = 1.0	    # lamw - ellipt-ty of the last flux surface (lamw>=1)
+gamw = 0.0	    # gamw - triang-ty of the last flux surface (0<=gamw<=1)
+freq = 0.92	    # frequency (GHz)
 number_of_ion_species = 1	# integer number of ion species
 list_of_ions =[ 1, 1]	    # integer ion mass, ion charge
 
+[w2front]
+Xf = 2.63	                    # Xf(cm) - distance from the minor axis to the focus
+Yf = 13.55	                    # Yf(cm) - distance from the equatorial plane to the focus (here Yf=sqrt(8^2-4.6^2)+7)
+kap0 = -62.0                    # kap0(deg) - beam axis elevation angle (between Pointing vector and e_R ort)
+dkap = 3.0	                    # dkap(deg) - angular half-width of the beam
+beam_polarization = 'Etor'	    # CHARACTER beam polarization (Epol or Etor)
+beam_divergence   = 'diverg'	# CHARACTER beam divergence (converg or diverg)
+
+
+[temper]
+hot_plasma_model = true       # .T.	logical - Hot plasma model
+Te0 = 0.5	                  # Te0(keV) - electron temperature at the axis    (rho = 0)
+Tel = 0.022	                  # Tel(keV) - electron temperature at the limiter (rho = al = a0-sol)
+pTe1 = 2.0	                  # pTe1 | powers determining Te profile at 0 <= rho <= al:
+pTe2 = 1.0	                  # pTe2 | Te=(Te0-Tel)*(1-(rho/al)^pTe1)^pTe2+Tel
+lTe = 1.0	                  # lTe (cm) - Te decay length at al < rho <= a0: Te=Tel*exp((al-rho)/lTe)
+Ti0 = 0.001	                  # Ti0(keV) - ion temperature at the axis    (rho = 0)
+Til = 0.001	                  # Til(keV) - ion temperature at the limiter (rho = al = a0-sol)
+pTi1 = 2.0	                  # pTi1 | powers determining Ti profile at 0 <= rho <= al:
+pTi2 = 1.0	                  # pTi2 | Ti=(Ti0-Til)*(1-(rho/al)^pTi1)^pTi2+Til
+lTi = 1.0	                  # lTi (cm) - Ti decay length at al < rho <= a0: Ti=Til*exp((al-rho)/lTi)
+VRmin = 0.001	              # VRmin - minimum value of kll*vt/o0 = vt/vph||
+Landau_damping = true         # .T.	logical - account for Landau damping
+ECR_damping = false           # .F.	logical - account for ECR damping
+ICR_damping = false           # .F.	logical - account for ICR damping
+Transit_Time_damping = false  # .F.	logical - account for Transit Time damping
+Mixed_Terms_damping = false   # .F.	logical - account for Mixed Terms damping
+
+[kngrid]
+Nymax = 50.0	        # Nymax
+Nzmax = 50.0	        # Nzmax
+kymax = 1000	        # kymax
+kzmax = 2000	        # kzmax
+accuracy = 0.002	    # accuracy of the solution
+Xsave_type = 0	        # Xsave type (save at: 0 - no save, 1 - arbitrary x, 2 - xuhr, <=-1 - x mesh)
+Xsave_position = 0.0    # Xsave position (cm) (required only if Xsave type = 1)
