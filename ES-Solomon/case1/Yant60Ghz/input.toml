@@ -3,10 +3,10 @@ name = 'FT-2_LH_freq' # name of calculation
 description = 'Synth. ES with Solomon fluct., case2, Ba'
 
 [series]
-number = 5
+number = 1
 section = 'w2front'
 var = 'Yf'
-start = -2.0
+start = 0.0
 step = 1.0
 
 [params]
@@ -14,7 +14,7 @@ field_solver_ver = 2 # 0 old, 1 MKL+OMP, 2 (MKL+OMP+no_inv_mat)
 
 [w2grid]
 # comments
-Nr = 845	  # number of radial points
+Nr = 1689	  # number of radial points
 nphi1 = 0	  # integer start toroidal wavenumber (Ntor1 = nphi1/R)
 nphi2 = 0	  # integer final toroidal wavenumber (Ntor2 = nphi2/R)
 nphistep = 1      # integer step for toroidal mode number
