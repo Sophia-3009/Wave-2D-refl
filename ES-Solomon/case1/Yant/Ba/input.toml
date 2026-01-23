@@ -14,7 +14,7 @@ field_solver_ver = 2 # 0 old, 1 MKL+OMP, 2 (MKL+OMP+no_inv_mat)
 
 [w2grid]
 # comments
-Nr = 845	  # number of radial points
+Nr = 1689	  # number of radial points
 nphi1 = 0	  # integer start toroidal wavenumber (Ntor1 = nphi1/R)
 nphi2 = 0	  # integer final toroidal wavenumber (Ntor2 = nphi2/R)
 nphistep = 1      # integer step for toroidal mode number
@@ -34,7 +34,7 @@ SOL = 0.0	# SOL(cm) - SOL width; a0-sol = al
 Delx = 0.0	# Delx(cm) - Shafranov shift at the axis
 lamw = 1.0	# lamw - ellipt-ty of the last flux surface (lamw>=1)
 gamw = 0.0	# gamw - triang-ty of the last flux surface (0<=gamw<=1)
-freq = 59.0	# frequency (GHz)
+freq = 64.0	# frequency (GHz)
 number_of_ion_species = 1	# integer number of ion species
 list_of_ions =[ 1, 1]	    # integer ion mass, ion charge
 
