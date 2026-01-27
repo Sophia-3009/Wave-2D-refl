@@ -1,0 +1,47 @@
+[work]
+name = 'FT-2_LH_freq' # name of calculation
+description = 'Synth. ES with Solomon fluct., case2, Ba'
+
+[series]
+number = 11
+section = 'plasma'
+var = 'freq'
+start = 63.5
+step = 0.1
+
+[params]
+field_solver_ver = 2 # 0 old, 1 MKL+OMP, 2 (MKL+OMP+no_inv_mat)
+
+[w2grid]
+# comments
+Nr = 1689	  # number of radial points
+nphi1 = 0	  # integer start toroidal wavenumber (Ntor1 = nphi1/R)
+nphi2 = 0	  # integer final toroidal wavenumber (Ntor2 = nphi2/R)
+nphistep = 1      # integer step for toroidal mode number
+Mmax = 168     # maximum poloidal mode number
+Mspow_excess = 0  # Mspow_excess (non-negative): Msmax = Msmax_min_permissible * 2**Mspow_excess
+Pinterv = 2  # number of traced time intervals
+
+[w2source]
+# comments
+AntType = 3    # 0-Sngl.Mode, 1-Grill, 2-Strap, 3-Spher.Front, 4-Gaus.Beam, 5-File, 6-BasicSet, 7-Imped
+Pinp = 1	# Pinp(kW)
+
+[plasma]
+R0  = 55.0	# R0(cm) - major radius (R0=0 for cylinder geometry)
+a0  = 8.0	# a0(cm) - minor radius
+SOL = 0.0	# SOL(cm) - SOL width; a0-sol = al
+Delx = 0.0	# Delx(cm) - Shafranov shift at the axis
+lamw = 1.0	# lamw - ellipt-ty of the last flux surface (lamw>=1)
+gamw = 0.0	# gamw - triang-ty of the last flux surface (0<=gamw<=1)
+freq = 63.5	# frequency (GHz)
+number_of_ion_species = 1	# integer number of ion species
+list_of_ions =[ 1, 1]	    # integer ion mass, ion charge
+
+[w2front]
+Xf = 16.0	                    # Xf(cm) - distance from the minor axis to the focus
+Yf = 0.0	                    # Yf(cm) - distance from the equatorial plane to the focus (here Yf=sqrt(8^2-4.6^2)+7)
+kap0 = 0.0                    # kap0(deg) - beam axis elevation angle (between Pointing vector and e_R ort)
+dkap = 5.0	                    # dkap(deg) - angular half-width of the beam
+beam_polarization = 'Epol'	    # CHARACTER beam polarization (Epol or Etor)
+beam_divergence   = 'converg'	# CHARACTER beam divergence (converg or diverg)
