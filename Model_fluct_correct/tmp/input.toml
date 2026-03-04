@@ -5,7 +5,7 @@ description = 'Synth. ES with Solomon fluct., case2, Ba'
 [series]
 number = 2
 section = 'w2grid'
-var = 'Nt'
+var = 'Nr'
 start = 1601
 step = 1600
 
