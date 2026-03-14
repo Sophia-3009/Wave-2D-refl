@@ -1,8 +1,8 @@
-1	integer CollModel (0 - None, 1 - Effective, 2 - Model Constant, 3 - Model Function)
+3	integer CollModel (0 - None, 1 - Effective, 2 - Model Constant, 3 - Model Function)
 0.0001	CRconst - model constant collision rate (this value is used only if CollModel >= 2)
 .T.	boost collisions at UHR (this and following values are used only if CollModel == 3)
-0.0005	CRuhr - collision rate at UHR
-0.06	CWuhr - UHR boost region relative width
+0.001	CRuhr - collision rate at UHR
+0.03	CWuhr - UHR boost region relative width
 .F.	boost collisions at LHR
 0.01	CRlhr - collision rate at LHR
 0.05	CWlhr - LHR boost region relative width

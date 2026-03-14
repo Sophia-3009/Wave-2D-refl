@@ -4,6 +4,6 @@
 0.0	Delx(cm) - Shafranov shift at the axis
 1.0	lamw - ellipt-ty of the last flux surface (lamw>=1)
 0.0	gamw - triang-ty of the last flux surface (0<=gamw<=1)
-53.0	frequency (GHz)
+51	frequency (GHz)
 1	integer number of ion species
 1 1	integer ion mass, ion charge
