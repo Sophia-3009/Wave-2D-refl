@@ -1,0 +1,8 @@
+.F.	logical - is damping layer present?
+0.7	damping rate at the center of damping layer
+1.0	psi coordinate of damping layer central position
+0.2727	damping layer half-width along psi
+0.2727	damping layer edge width along psi
+-90.0	tet coordinate of damping layer central position (deg)
+312.0	damping layer half-width along tet (deg) (0 for damping = const(tet))
+312.0	damping layer edge width along tet (deg)
